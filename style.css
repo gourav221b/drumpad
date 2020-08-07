@@ -6,6 +6,8 @@
 
 body {
     font-family: Roboto, sans-serif;
+    background: #000000;
+    color: #ffffff;
 }
 
 .main,
@@ -20,7 +22,7 @@ body {
 .boxes {
     justify-content: center;
     flex: 1;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -30,7 +32,7 @@ body {
 }
 
 .header h1 {
-    margin: 50px 0px 30px 0;
+    margin: 10px 0px 20px 0;
 }
 
 .pads {
@@ -38,14 +40,16 @@ body {
     display: flex;
     flex-direction: row;
     margin: 10px;
+    flex-wrap: wrap;
 }
 
 .pads>div {
-    height: 20vh;
-    width: 100px;
-    flex: 1;
+    height: 22vh;
+    width: 30%;
     opacity: 0.8;
-    margin: 4px;
+    margin: 5px auto;
+    flex-wrap: wrap;
+    border-radius: 25px;
 }
 
 .pads>div:hover {
@@ -54,28 +58,31 @@ body {
     transition: 0.2s ease;
 }
 
-.pad1 {
-    background: #60d935;
+.pad1,
+.pad7 {
+    background: radial-gradient(#ffffffc2, #1D976C);
 }
 
 .pad2 {
-    background: #d36060;
+    background: radial-gradient(#ffffffc2, #EB5757);
 }
 
-.pad3 {
-    background: #c060d3;
+.pad3,
+.pad8 {
+    background: radial-gradient(#ffffffc2, #C6426E);
 }
 
 .pad4 {
-    background: #d3d160;
+    background: radial-gradient(#ffffffc2, #d3d160);
 }
 
-.pad5 {
-    background: #05afda;
+.pad5,
+.pad9 {
+    background: radial-gradient(#ffffffc2, #05afda);
 }
 
 .pad6 {
-    background: #d93535;
+    background: radial-gradient(#ffffffc2, #d93535);
 }
 
 .visual>div {
@@ -88,6 +95,23 @@ body {
     opacity: 0.8;
 }
 
+.btn {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.btn:hover {
+    padding: 17px;
+}
+
+
+/* 
 @keyframes jump {
     0% {
         bottom: 0;
@@ -101,4 +125,4 @@ body {
         bottom: 0%;
         left: 80%;
     }
-}
+} */
