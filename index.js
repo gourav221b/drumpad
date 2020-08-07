@@ -5,8 +5,6 @@ var playlist = [];
 window.addEventListener('load', () => {
 
 
-    const colors = ["#60d935", "#d36060", "#c060d3", "#d3d160", "#05afda", "#d93535"];
-    const visual = document.querySelector(".visual");
     // MUSIC MAKING
 
     pads.forEach((pad, index) => {
@@ -37,7 +35,5 @@ window.addEventListener('load', () => {
     });
 
 
-
-    // LETS MAKE BUBBLES
 
 });
