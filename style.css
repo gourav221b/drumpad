@@ -8,12 +8,20 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-.main {
+.main,
+.boxes {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+}
+
+.boxes {
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    height: 100vh;
 }
 
 .header {
@@ -29,6 +37,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin: 10px;
 }
 
 .pads>div {
@@ -36,6 +45,7 @@ body {
     width: 100px;
     flex: 1;
     opacity: 0.8;
+    margin: 4px;
 }
 
 .pads>div:hover {
